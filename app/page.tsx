@@ -1,3 +1,4 @@
+'use client';
 import Header from '@/components/layout/header';
 import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';

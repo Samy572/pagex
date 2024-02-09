@@ -21,9 +21,9 @@ const Vision = () => {
 			<Container>
 				<div className="flex h-full  lg:justify-between items-center w-full flex-wrap ">
 					<motion.div
-						initial={{ opacity: 0, y: 50 }}
+						initial={{ opacity: 0.1, y: 50 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5, delay: 0.3 }}
+						transition={{ duration: 0.5 }}
 						className="h-fit relative lg:max-w-[50%]  "
 					>
 						<h1 className="text-4xl tracking-tight font-bold leading-[40px] md:leading-[52px]    ">
@@ -64,7 +64,7 @@ const Vision = () => {
 					<motion.div
 						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.6, delay: 0.3 }}
+						transition={{ duration: 0.5, delay: 0.3 }}
 					>
 						<Card img={'/images/card.jpg'} />
 					</motion.div>
