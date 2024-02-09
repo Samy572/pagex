@@ -17,11 +17,11 @@ const Vision = () => {
 	}, [txt.length]);
 
 	return (
-		<section id="#vision" className="min-h-[90vh]  w-full">
+		<section id="#vision" className="min-h-[100vh]  w-full">
 			<Container>
-				<div className="flex h-full  lg:justify-between items-center w-full flex-wrap ">
+				<div className="flex h-full mt-10 md:m-0  lg:justify-between items-center w-full flex-wrap ">
 					<motion.div
-						initial={{ opacity: 0.1, y: 50 }}
+						initial={{ opacity: 0, y: 50 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5 }}
 						className="h-fit relative lg:max-w-[50%]  "

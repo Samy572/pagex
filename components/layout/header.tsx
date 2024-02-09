@@ -6,6 +6,7 @@ import { orbitron } from './font';
 import { motion } from 'framer-motion';
 import { GetLink } from '@/lib/getlink';
 import { useState } from 'react';
+import { Menu } from './menu';
 const Header = () => {
 	const [activeLinkId, setActiveLinkId] = useState<number | null>(null);
 
@@ -15,18 +16,18 @@ const Header = () => {
 	const getlink = GetLink;
 
 	return (
-		<motion.header
-			initial={{ opacity: 0, y: 30 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ duration: 0.5, delay: 0.2 }}
-			className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative"
-		>
+		<header className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative ">
 			<h2
 				className={`${orbitron.className} text-xl  md:text-4xl tracking-wide		 `}
 			>
 				Page X
 			</h2>
-			<ul className="md:flex items-center hidden gap-x-3 text-lg  ">
+			<motion.ul
+				initial={{ opacity: 0, y: 30 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, delay: 0.2 }}
+				className="md:flex items-center hidden gap-x-3 "
+			>
 				{getlink.map((link) => (
 					<li
 						key={link.name}
@@ -41,9 +42,9 @@ const Header = () => {
 				<li>
 					<ModeToggle />
 				</li>
-			</ul>
-			<AlignRight className="md:hidden" />
-		</motion.header>
+			</motion.ul>
+			<Menu />
+		</header>
 	);
 };
 export default Header;
