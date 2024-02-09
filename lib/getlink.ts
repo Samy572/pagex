@@ -6,8 +6,8 @@ export const GetLink = [
 	},
 	{
 		id: 2,
-		name: 'Stack',
-		href: '#stack',
+		name: 'Nos projets',
+		href: '#projets',
 	},
 	{
 		id: 3,

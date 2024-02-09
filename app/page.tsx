@@ -1,5 +1,5 @@
 import Header from '@/components/layout/header';
-import Stack from '@/components/stack/stack';
+import { Parralax } from '@/components/project/project';
 import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';
 
@@ -11,7 +11,7 @@ export default function Home() {
 				fill="white"
 			/>
 			<Vision />
-			<Stack />
+			<Parralax />
 		</main>
 	);
 }

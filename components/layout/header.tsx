@@ -17,9 +17,7 @@ const Header = () => {
 
 	return (
 		<header className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative ">
-			<h2
-				className={`${orbitron.className} text-xl  md:text-4xl tracking-wide		 `}
-			>
+			<h2 className={`${orbitron.className} text-4xl  tracking-wide		 `}>
 				Page X
 			</h2>
 			<motion.ul

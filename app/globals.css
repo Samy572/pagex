@@ -83,6 +83,9 @@
 		transition: 0.5 ease;
 		border-radius: 0.5rem;
 	}
+
+
+
 	/*scrollbar*/
 	/* scroll */
 	::-webkit-scrollbar {
@@ -115,6 +118,4 @@
 	::-webkit-scrollbar-corner {
 		background: transparent;
 	}
-
-
 }

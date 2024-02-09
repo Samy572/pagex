@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Container } from '../layout/container';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
@@ -8,6 +8,8 @@ import { Card } from './card';
 const Vision = () => {
 	const txt = ['attractif', 'moderne', 'interractif'];
 	const [currentIdx, setCurrentIdx] = useState(0);
+	const refView = useRef(null);
+	
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
@@ -17,10 +19,11 @@ const Vision = () => {
 	}, [txt.length]);
 
 	return (
-		<section id="#vision" className="min-h-[100vh]  w-full">
+		<section id="vision" className="h-[100vh]  w-full">
 			<Container>
 				<div className="flex h-full mt-10 md:m-0  lg:justify-between items-center w-full flex-wrap ">
 					<motion.div
+						ref={refView}
 						initial={{ opacity: 0, y: 50 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5 }}
