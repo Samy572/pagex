@@ -17,11 +17,11 @@ const Vision = () => {
 	}, [txt.length]);
 
 	return (
-		<section id="vision" className="min-h-[calc(100vh-4.45rem)]  w-full">
+		<section id="#vision" className="min-h-[90vh]  w-full">
 			<Container>
 				<div className="flex h-full  lg:justify-between items-center w-full flex-wrap ">
 					<motion.div
-						initial={{ opacity: 0, y: 20 }}
+						initial={{ opacity: 0, y: 50 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.3 }}
 						className="h-fit relative lg:max-w-[50%]  "
@@ -62,9 +62,9 @@ const Vision = () => {
 						</motion.div>
 					</motion.div>
 					<motion.div
-						initial={{ opacity: 0, y: -20 }}
+						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.6 }}
+						transition={{ duration: 0.6, delay: 0.3 }}
 					>
 						<Card img={'/images/card.jpg'} />
 					</motion.div>

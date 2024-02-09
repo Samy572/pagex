@@ -16,13 +16,13 @@ const Header = () => {
 
 	return (
 		<motion.header
-			initial={{ opacity: 0, y: 10 }}
+			initial={{ opacity: 0, y: 30 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{ duration: 0.5, delay: 0.1 }}
-			className="max-w-7xl py-8 md:py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex overflow-hidden z-10 sticky top-0 "
+			transition={{ duration: 0.5, delay: 0.2 }}
+			className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative"
 		>
 			<h2
-				className={`${orbitron.className} text-4xl  md:text-4xl tracking-wide		 `}
+				className={`${orbitron.className} text-xl  md:text-4xl tracking-wide		 `}
 			>
 				Page X
 			</h2>
