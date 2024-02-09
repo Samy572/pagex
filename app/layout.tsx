@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter, Orbitron } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/layout/footer';
 import { Provider } from '@/components/provider';
+import Header from '@/components/layout/header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,9 +26,10 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
+					<Header />
 					{children}
+					<Footer />
 				</Provider>
-				<Footer />
 			</body>
 		</html>
 	);
