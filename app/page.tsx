@@ -1,5 +1,5 @@
-import Header from '@/components/layout/header';
 import { Parralax } from '@/components/project/project';
+import HorizontalScroll from '@/components/ui/horizontal';
 import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';
 
@@ -11,7 +11,9 @@ export default function Home() {
 				fill="white"
 			/>
 			<Vision />
+
 			<Parralax />
+			<HorizontalScroll />
 		</main>
 	);
 }
