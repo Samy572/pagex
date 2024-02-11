@@ -1,7 +1,8 @@
 import { Parralax } from '@/components/project/project';
-import HorizontalScroll from '@/components/ui/horizontal';
+import TeamWork from '@/components/ui/teamwork';
 import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';
+import Price from '@/components/price/price';
 
 export default function Home() {
 	return (
@@ -13,7 +14,8 @@ export default function Home() {
 			<Vision />
 
 			<Parralax />
-			<HorizontalScroll />
+			<TeamWork />
+			<Price />
 		</main>
 	);
 }

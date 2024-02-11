@@ -1,19 +1,19 @@
 'use client';
 import Link from 'next/link';
 import { ModeToggle } from '../ui/toggle-mode';
-import { AlignRight } from 'lucide-react';
 import { orbitron } from './font';
 import { motion } from 'framer-motion';
 import { GetLink } from '@/lib/getlink';
 import { useState } from 'react';
 import { Menu } from './menu';
+import { TypeLink } from '@/types/types';
 const Header = () => {
 	const [activeLinkId, setActiveLinkId] = useState<number | null>(null);
 
 	const handleClick = (linkId: number) => {
 		setActiveLinkId(linkId === activeLinkId ? null : linkId);
 	};
-	const getlink = GetLink;
+	const getlink: TypeLink = GetLink;
 
 	return (
 		<header className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative ">
