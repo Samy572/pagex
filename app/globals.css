@@ -84,6 +84,31 @@
 		border-radius: 0.5rem;
 	}
 
+	/* Gradient */
+
+	.violet-gradient {
+		background: linear-gradient(
+			157.81deg,
+			#b080f2 -43.27%,
+			#b36ce9 -21.24%,
+			#ad77f0 12.19%,
+			#8645e1 29.82%,
+			#8833de 51.94%,
+			#6910c2 90.29%
+		);
+	}
+
+	.cyan-gradient {
+    background: linear-gradient(
+        157.81deg,
+        #00FFFF -43.27%,
+        #00FFFF -21.24%,
+        #50c7ef 12.19%,
+        #39cbec 29.82%,
+        #23cabf 51.94%,
+        #08c1ff 90.29%
+    );
+}
 
 	/*scrollbar*/
 	/* scroll */
