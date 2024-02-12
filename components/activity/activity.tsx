@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import MotionSpan from '../animations/text';
 import { Container } from '../layout/container';
 
-const TeamWork = () => {
+const Activity = () => {
 	return (
-		<section className="h-[100vh] w-full flex justify-center items-center flex-col  ">
+		<section className="min-h-[100vh] w-full flex justify-center items-center flex-col mb-56 ">
 			<Container>
 				<motion.h2
 					initial={{ opacity: 0, y: 30 }}
@@ -39,4 +39,4 @@ const TeamWork = () => {
 		</section>
 	);
 };
-export default TeamWork;
+export default Activity;

@@ -1,8 +1,8 @@
 import { Parralax } from '@/components/project/project';
-import TeamWork from '@/components/ui/teamwork';
 import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';
 import Price from '@/components/price/price';
+import Activity from '@/components/activity/activity';
 
 export default function Home() {
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 			<Vision />
 
 			<Parralax />
-			<TeamWork />
+			<Activity />
 			<Price />
 		</main>
 	);
