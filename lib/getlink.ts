@@ -12,7 +12,7 @@ export const GetLink = [
 	{
 		id: 3,
 		name: 'Prix',
-		href: '#pricing',
+		href: '#price',
 	},
 	{
 		id: 4,
