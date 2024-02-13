@@ -19,14 +19,14 @@ const Activity = () => {
 					}}
 					transition={{ duration: 0.5 }}
 					style={{ lineHeight: '1.3' }}
-					className=" mt-32 leading-9 md:text-7xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-600"
+					className=" mt-32 leading-9 md:text-7xl text-4xl font-semibold  bg-clip-text "
 				>
 					<strong>Propulsé votre activité</strong> à un autre niveau.
 				</motion.h2>
 				<div>
 					<h3
 						style={{ lineHeight: '1.5' }}
-						className="    mt-20  md:text-6xl text-3xl text-transparent bg-clip-text bg-gradient-to-l from-blue-600 to-blue-100  "
+						className="    mt-20  md:text-6xl text-3xl  "
 					>
 						<MotionSpan
 							delay={0.4}
