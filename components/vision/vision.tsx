@@ -4,12 +4,12 @@ import { Container } from '../layout/container';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { Card } from './card';
+import Link from 'next/link';
 
 const Vision = () => {
 	const txt = ['attractif', 'moderne', 'interractif'];
 	const [currentIdx, setCurrentIdx] = useState(0);
 	const refView = useRef(null);
-	
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
@@ -57,11 +57,10 @@ const Vision = () => {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5, delay: 0.5 }}
 						>
-							<Button
-								size={'lg'}
-								variant={'call'}
-								className="mt-7 "
-							>{`Commencer`}</Button>
+							<Link
+								href="#price"
+								className="mt-7 border border-input bg-blue-500/90 shadow-sm hover:bg-blue-500 text-white inline-flex items-center justify-center whitespace-nowrap  text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-10 rounded-md px-8"
+							>{`Commencer`}</Link>
 						</motion.div>
 					</motion.div>
 					<motion.div

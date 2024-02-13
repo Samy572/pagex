@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { CardBody, CardContainer, CardItem } from '../ui/3dcard';
+import Link from 'next/link';
 
 export function Card({ img }: { img: string }) {
 	return (
@@ -15,7 +16,7 @@ export function Card({ img }: { img: string }) {
 					Créer la landing page de vos rêves.
 				</CardItem>
 
-				<CardItem translateZ="100" className="w-full mt-4">
+				<CardItem translateZ="110" className="w-full mt-4">
 					<Image
 						src={img}
 						height="1000"
@@ -31,7 +32,7 @@ export function Card({ img }: { img: string }) {
 						as="button"
 						className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
 					>
-						Essayer maintenant →
+						<Link href="#price">essayer maintenant →</Link>
 					</CardItem>
 				</div>
 			</CardBody>
