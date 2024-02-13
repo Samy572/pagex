@@ -1,14 +1,45 @@
 import { Container } from '../layout/container';
 import { FaqAccordion } from './faqaccordion';
+import SvgAnimate from './question';
 
 const Faq = () => {
 	return (
-		<section className="h-[100vh]">
+		<section className="h-[100vh] relative">
 			<Container>
 				<h4 className="my-16 font-semibold md:text-5xl text-2xl w-fit md:border-b-8 border-b-4 border-b-blue-500">
 					Questions fréquentes{' '}
 				</h4>
-				<FaqAccordion />
+				<div className=" md:flex justify-between hidden">
+					<FaqAccordion />
+					<div>
+						<SvgAnimate
+							className="absolute"
+							initialTop={50}
+							initialRight={-120}
+							top={-190}
+							right={-250}
+							delay={0.5}
+							duration={28}
+						/>
+						<SvgAnimate
+							initialRight={0}
+							initialTop={350}
+							className="absolute"
+							top={-100}
+							right={-90}
+							delay={2}
+							duration={31}
+						/>
+						<SvgAnimate
+							initialRight={-80}
+							initialTop={-100}
+							top={-50}
+							right={200}
+							delay={2}
+							duration={23}
+						/>
+					</div>
+				</div>
 			</Container>
 		</section>
 	);
