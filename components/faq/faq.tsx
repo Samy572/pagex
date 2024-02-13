@@ -9,9 +9,9 @@ const Faq = () => {
 				<h4 className="my-16 font-semibold md:text-5xl text-2xl w-fit md:border-b-8 border-b-4 border-b-blue-500">
 					Questions fréquentes{' '}
 				</h4>
-				<div className=" md:flex justify-between hidden">
+				<div className=" md:flex justify-between ">
 					<FaqAccordion />
-					<div>
+					<div className="hidden md:flex">
 						<SvgAnimate
 							className="absolute"
 							initialTop={50}
