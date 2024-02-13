@@ -3,6 +3,7 @@ import { Spotlight } from '@/components/ui/spotlight';
 import Vision from '@/components/vision/vision';
 import Price from '@/components/price/price';
 import Activity from '@/components/activity/activity';
+import Faq from '@/components/faq/faq';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<Parralax />
 			<Activity />
 			<Price />
+			<Faq />
 		</main>
 	);
 }
