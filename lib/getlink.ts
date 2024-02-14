@@ -68,17 +68,20 @@ export const GetSocialMedia = [
 		name: 'Facebook',
 		href: 'https://facebook.com/',
 		img: 'images/svg/fb.svg',
+		className: 'hoverEffect',
 	},
 	{
 		id: 2,
 		name: 'Twitter',
 		href: 'https://twitter.com/',
 		img: 'images/svg/twitter.svg',
+		className: 'hoverEffect',
 	},
 	{
 		id: 3,
 		name: 'Instagram',
 		href: 'https://instagram.com/',
 		img: 'images/svg/insta.svg',
+		className: 'hoverEffect',
 	},
 ];

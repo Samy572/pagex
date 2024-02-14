@@ -4,7 +4,7 @@ import SvgAnimate from './question';
 
 const Faq = () => {
 	return (
-		<section className="md:h-[80vh] h-[70vh] relative">
+		<section id="faq" className="md:h-[80vh] h-[70vh] relative">
 			<Container>
 				<h4 className="my-16 font-semibold md:text-5xl text-2xl w-fit md:border-b-8 border-b-4 border-b-blue-500">
 					Questions fréquentes{' '}

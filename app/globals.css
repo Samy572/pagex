@@ -99,16 +99,37 @@
 	}
 
 	.cyan-gradient {
-    background: linear-gradient(
-        157.81deg,
-        #00FFFF -43.27%,
-        #00FFFF -21.24%,
-        #50c7ef 12.19%,
-        #39cbec 29.82%,
-        #23cabf 51.94%,
-        #08c1ff 90.29%
-    );
-}
+		background: linear-gradient(
+			157.81deg,
+			#00ffff -43.27%,
+			#00ffff -21.24%,
+			#50c7ef 12.19%,
+			#39cbec 29.82%,
+			#23cabf 51.94%,
+			#08c1ff 90.29%
+		);
+	}
+
+	.hoverEffect {
+		position: relative;
+	}
+
+	.hoverEffect:before {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: left;
+		background-color: #fff;
+		transition: transform 0.4s ease-out;
+	}
+
+	.hoverEffect:hover::before {
+		transform-origin: right;
+		transform: scaleX(1);
+	}
 
 	/*scrollbar*/
 	/* scroll */

@@ -38,7 +38,7 @@ const Footer = () => {
 							Page X
 						</motion.h4>
 					</div>
-					<ul className="leading-8">
+					<ul className="leading-8 relative">
 						<motion.h5
 							variants={variants}
 							initial={variants.hidden}
@@ -56,13 +56,14 @@ const Footer = () => {
 									whileInView={variants.visible}
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
 									key={el.id}
-								>
+									className="w-fit hoverEffect "
+									>
 									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
 						})}
 					</ul>
-					<ul className="leading-8">
+					<ul className="leading-8 relative">
 						<motion.h5
 							variants={variants}
 							initial={variants.hidden}
@@ -80,7 +81,8 @@ const Footer = () => {
 									initial={variants.hidden}
 									whileInView={variants.visible}
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
-								>
+									className="w-fit hoverEffect "
+									>
 									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
@@ -98,7 +100,7 @@ const Footer = () => {
 						Nos réseaux
 					</motion.h5>
 					<div className="flex md:justify-between flex-col md:flex-row ">
-						<ul className="leading-8 flex gap-x-7 ">
+						<ul className="leading-8 flex gap-x-7 relative">
 							{linkSocialMedia.map((el) => {
 								return (
 									<motion.li
