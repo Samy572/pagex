@@ -4,6 +4,7 @@ import Vision from '@/components/vision/vision';
 import Price from '@/components/price/price';
 import Activity from '@/components/activity/activity';
 import Faq from '@/components/faq/faq';
+import Contact from '@/components/contact/contact';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<Activity />
 			<Price />
 			<Faq />
+			<Contact />
 		</main>
 	);
 }

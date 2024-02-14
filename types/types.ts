@@ -14,3 +14,19 @@ export type CardPrice = {
 	list: string[];
 	start: string;
 }[];
+
+export type FormData = {
+	surname: string;
+	name: string;
+	company: string;
+	email: string;
+	phone: string;
+	message: string;
+};
+
+export type MapInput = {
+	id: number;
+	name: 'company' | 'email' | 'name' | 'surname' | 'message';
+	placeholder: string;
+	type: string;
+};
