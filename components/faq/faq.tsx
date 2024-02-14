@@ -4,12 +4,12 @@ import SvgAnimate from './question';
 
 const Faq = () => {
 	return (
-		<section className="h-[100vh] relative">
+		<section className="md:h-[80vh] h-[70vh] relative">
 			<Container>
 				<h4 className="my-16 font-semibold md:text-5xl text-2xl w-fit md:border-b-8 border-b-4 border-b-blue-500">
 					Questions fréquentes{' '}
 				</h4>
-				<div className=" md:flex justify-between ">
+				<div className=" md:flex  justify-between ">
 					<FaqAccordion />
 					<div className="hidden md:flex">
 						<SvgAnimate

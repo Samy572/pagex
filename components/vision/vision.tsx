@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Container } from '../layout/container';
 import { motion } from 'framer-motion';
-import { Button } from '../ui/button';
 import { Card } from './card';
 import Link from 'next/link';
 
@@ -19,7 +18,7 @@ const Vision = () => {
 	}, [txt.length]);
 
 	return (
-		<section id="vision" className="h-[100vh]  w-full">
+		<section id="vision" className="md:h-[100vh] h-full  w-full">
 			<Container>
 				<div className="flex h-full mt-10 md:m-0  lg:justify-between items-center w-full flex-wrap ">
 					<motion.div
