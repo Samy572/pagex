@@ -57,7 +57,7 @@ const Footer = () => {
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
 									key={el.id}
 								>
-									<Link href={el.name}>{el.name}</Link>
+									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
 						})}
@@ -81,7 +81,7 @@ const Footer = () => {
 									whileInView={variants.visible}
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
 								>
-									<Link href={el.name}>{el.name}</Link>
+									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
 						})}
