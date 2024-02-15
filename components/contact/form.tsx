@@ -47,8 +47,8 @@ const ContactForm = () => {
 							className="resize-none"
 							cols={20}
 							rows={5}
-							name="name"
-							id="name"
+							name="message"
+							id="message"
 							placeholder="Votre message..."
 						/>
 					</div>
