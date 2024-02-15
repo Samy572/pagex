@@ -19,9 +19,15 @@ export function Menu() {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<Button variant={'link'} className="fixed  right-3 z-10">
-					<AlignRight className="md:hidden" />
-				</Button>
+				<div className="md:hidden">
+					<Button
+						variant={'link'}
+						aria-label="Menu"
+						className="fixed top-2.5  right-3 z-10"
+					>
+						<AlignRight className="block md:hidden " />
+					</Button>
+				</div>
 			</SheetTrigger>
 			<SheetContent>
 				<ul className="flex flex-col justify-start mt-16 gap-y-9   h-full">
