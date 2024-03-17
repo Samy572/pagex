@@ -14,7 +14,7 @@ const Footer = () => {
 	const linkProductFooter = GetProduitFooter;
 	const linkSocialMedia = GetSocialMedia;
 	const variants = {
-		hidden: { opacity: 0, y: 50 },
+		hidden: { opacity: 0, y: -20 },
 		visible: { opacity: 1, y: 0 },
 	};
 
@@ -23,7 +23,7 @@ const Footer = () => {
 			variants={variants}
 			initial={variants.hidden}
 			whileInView={variants.visible}
-			transition={{ duration: 0.5, delay: 0.1 }}
+			transition={{ duration: 0.3, delay: 0.1 }}
 			className=" w-full bg-blue-500"
 		>
 			<div className="">
@@ -32,7 +32,7 @@ const Footer = () => {
 						<motion.h4
 							initial={{ y: -50, opacity: 0 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: 0.5 }}
+							transition={{ duration: 0.3, delay: 0.5 }}
 							className={clsx(orbitron.className, 'md:text-5xl text-3xl pb-5')}
 						>
 							Page X
@@ -57,7 +57,7 @@ const Footer = () => {
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
 									key={el.id}
 									className="w-fit hoverEffect "
-									>
+								>
 									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
@@ -82,7 +82,7 @@ const Footer = () => {
 									whileInView={variants.visible}
 									transition={{ duration: 0.5, delay: 0.5 + el.id * 0.1 }}
 									className="w-fit hoverEffect "
-									>
+								>
 									<Link href={el.href}>{el.name}</Link>
 								</motion.li>
 							);
