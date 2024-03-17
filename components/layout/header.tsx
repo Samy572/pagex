@@ -8,6 +8,8 @@ import { useRef } from 'react';
 import { Menu } from './menu';
 import { TypeLink } from '@/types/types';
 const Header = () => {
+	const getlink: TypeLink = GetLink;
+
 	const hoverBar = useRef<HTMLDivElement>(null);
 	const handleHover = (e: React.MouseEvent<HTMLLIElement>) => {
 		const target = e.currentTarget;
@@ -17,7 +19,6 @@ const Header = () => {
 			hoverBar.current.style.height = `${target.offsetHeight}px`;
 		}
 	};
-	const getlink: TypeLink = GetLink;
 
 	return (
 		<header className="max-w-7xl py-4 px-4 mx-auto h-fit w-full items-center  justify-between sm:px-6 lg:px-8 flex relative ">
